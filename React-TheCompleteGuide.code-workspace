@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "Application3"
+		},
+		{
+			"path": "burger-app"
 		}
 	]
 }
