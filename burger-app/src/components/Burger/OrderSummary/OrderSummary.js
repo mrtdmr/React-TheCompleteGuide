@@ -4,7 +4,7 @@ import Button from "../../UI/Button/Button";
 class OrderSummary extends Component {
   //Functional component olabilirdi. Lifecycle için class componenete çevrildi.
   componentDidUpdate() {
-    console.log("[OrderSummary] did update");
+    //console.log("[OrderSummary] did update");
   }
   render() {
     const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
