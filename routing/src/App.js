@@ -5,6 +5,7 @@ import Blog from "./containers/Blog/Blog";
 class App extends Component {
   render() {
     return (
+      //<BrowserRouter basename="/my-app"> Uygulammayı subfolder üzerinden başlatmak istersek bu şekilde kullanabiliriz.
       <BrowserRouter>
         <div className="App">
           <Blog />

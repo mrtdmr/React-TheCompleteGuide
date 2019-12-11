@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "routing"
+		},
+		{
+			"path": "routing-react-suspense"
 		}
 	]
 }
