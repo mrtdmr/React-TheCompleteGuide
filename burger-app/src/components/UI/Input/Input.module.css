@@ -18,7 +18,7 @@
   width: 100%;
   box-sizing: border-box;
 }
-.inputelement:focus {
+.InputElement:focus {
   outline: none;
   background-color: #ccc;
 }

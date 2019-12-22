@@ -27,7 +27,7 @@ const input = props => {
       inputElement = (
         <select
           onChange={props.changed}
-          lassName={classes.InputElement}
+          className={classes.InputElement}
           value={props.value}
         >
           {props.elementConfig.options.map(option => (
