@@ -1,25 +1,28 @@
 {
-	"folders": [
-		{
-			"path": "Application1"
-		},
-		{
-			"path": "Application2"
-		},
-		{
-			"path": "Application3"
-		},
-		{
-			"path": "burger-app"
-		},
-		{
-			"path": "http-app"
-		},
-		{
-			"path": "routing"
-		},
-		{
-			"path": "routing-react-suspense"
-		}
-	]
+  "folders": [
+    {
+      "path": "Application1"
+    },
+    {
+      "path": "Application2"
+    },
+    {
+      "path": "Application3"
+    },
+    {
+      "path": "burger-app"
+    },
+    {
+      "path": "http-app"
+    },
+    {
+      "path": "routing"
+    },
+    {
+      "path": "routing-react-suspense"
+    },
+    {
+      "path": "redux"
+    }
+  ]
 }
