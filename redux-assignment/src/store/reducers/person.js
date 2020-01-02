@@ -7,7 +7,13 @@ const personReducer = (state = initialState, action) => {
     case actionTypes.ADD_PERSON:
       return {
         ...state,
-        persons: state.persons.concat(action.person)
+        persons: state.persons.concat(action.personData)
+      };
+    case actionTypes.DELETE_PERSON:
+      const updatedPersons = state.persons.filter(p => p.id != action.id);
+      return {
+        ...state,
+        persons: updatedPersons
       };
   }
   return state;
