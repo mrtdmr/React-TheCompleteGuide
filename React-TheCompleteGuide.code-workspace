@@ -23,6 +23,9 @@
     },
     {
       "path": "redux"
+    },
+    {
+      "path": "redux-assignment"
     }
   ]
 }
