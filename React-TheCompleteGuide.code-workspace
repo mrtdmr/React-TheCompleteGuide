@@ -26,6 +26,9 @@
     },
     {
       "path": "redux-assignment"
+    },
+    {
+      "path": "redux-adv"
     }
   ]
 }
