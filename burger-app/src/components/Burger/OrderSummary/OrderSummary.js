@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Aux from "../../../hoc/Auxiliary/Auxiliary";
-import Button from "../../UI/Button/Button";
+import React, { Component } from 'react';
+import Aux from '../../../hoc/Auxiliary/Auxiliary';
+import Button from '../../UI/Button/Button';
 class OrderSummary extends Component {
   //Functional component olabilirdi. Lifecycle için class componenete çevrildi.
   componentDidUpdate() {
@@ -10,7 +10,7 @@ class OrderSummary extends Component {
     const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
       return (
         <li key={igKey}>
-          <span style={{ textTransform: "capitalize" }}> {igKey}</span>:
+          <span style={{ textTransform: 'capitalize' }}> {igKey}</span>:
           {this.props.ingredients[igKey]}
         </li>
       );
@@ -24,10 +24,10 @@ class OrderSummary extends Component {
           <strong>Total Price:{this.props.price.toFixed(2)}</strong>
         </p>
         <p>Continue to Checkout?</p>
-        <Button btnType="Danger" clicked={this.props.purchaseCanceled}>
+        <Button btnType='Danger' clicked={this.props.purchaseCanceled}>
           CANCEL
         </Button>
-        <Button btnType="Success" clicked={this.props.purchaseContinued}>
+        <Button btnType='Success' clicked={this.props.purchaseContinued}>
           CONTINUE
         </Button>
       </Aux>
