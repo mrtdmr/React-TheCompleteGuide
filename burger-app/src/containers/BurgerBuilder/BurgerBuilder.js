@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import Aux from "../../hoc/Auxiliary/Auxiliary";
-import Burger from "../../components/Burger/Burger";
-import BuildControls from "../../components/Burger/BuildControls/BuildControls";
-import Modal from "../../components/UI/Modal/Modal";
-import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
-import Spinner from "../../components/UI/Spinner/Spinner";
-import axios from "../../axios-orders";
-import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
-import { connect } from "react-redux";
-import * as actions from "../../store/actions/index";
+import React, { Component } from 'react';
+import Aux from '../../hoc/Auxiliary/Auxiliary';
+import Burger from '../../components/Burger/Burger';
+import BuildControls from '../../components/Burger/BuildControls/BuildControls';
+import Modal from '../../components/UI/Modal/Modal';
+import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
+import Spinner from '../../components/UI/Spinner/Spinner';
+import axios from '../../axios-orders';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
+import { connect } from 'react-redux';
+import * as actions from '../../store/actions/index';
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
   // constructor(props){
   //   super(props);
   //   this.state={...}
@@ -82,8 +82,8 @@ class BurgerBuilder extends Component {
   purchaseHandler = () => {
     if (this.props.isAuthenticated) this.setState({ purchasing: true });
     else {
-      this.props.onSetAuthRedirectPath("/checkout");
-      this.props.history.push("/auth");
+      this.props.onSetAuthRedirectPath('/checkout');
+      this.props.history.push('/auth');
     }
   };
   purchaseCancelHandler = () => {
@@ -109,7 +109,7 @@ class BurgerBuilder extends Component {
 */
   purchaseContinueHandler = () => {
     this.props.onInitPurchase();
-    this.props.history.push("/checkout");
+    this.props.history.push('/checkout');
   };
   render() {
     const disabledInfo = {

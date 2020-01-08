@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import CheckoutSummary from "../../components/Order/CheckoutSummary/CheckoutSummary";
-import { Route, Redirect } from "react-router-dom";
-import ContactData from "./ContactData/ContactData";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSummary';
+import { Route, Redirect } from 'react-router-dom';
+import ContactData from './ContactData/ContactData';
+import { connect } from 'react-redux';
 class Checkout extends Component {
   /*
   state = {
@@ -32,14 +32,13 @@ class Checkout extends Component {
     this.props.history.goBack();
   };
   checkoutContinuedHandler = () => {
-    this.props.history.replace("/checkout/contact-data");
+    this.props.history.replace('/checkout/contact-data');
   };
   render() {
-    console.log(this.props.ings);
-    let summary = <Redirect to="/" />;
+    let summary = <Redirect to='/' />;
     if (this.props.ings) {
       const purchasedRedirect = this.props.purchased ? (
-        <Redirect to="/" />
+        <Redirect to='/' />
       ) : null;
       summary = (
         <div>
@@ -50,7 +49,7 @@ class Checkout extends Component {
             checkoutContinued={this.checkoutContinuedHandler}
           />
           <Route
-            path={this.props.match.path + "/contact-data"}
+            path={this.props.match.path + '/contact-data'}
             /*render={props => (
             <ContactData
               ingredients={this.props.ings}
