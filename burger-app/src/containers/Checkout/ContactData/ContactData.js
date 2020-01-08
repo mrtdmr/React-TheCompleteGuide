@@ -1,22 +1,23 @@
-import React, { Component } from "react";
-import Button from "../../../components/UI/Button/Button";
-import classes from "./ContactData.module.css";
-import axios from "../../../axios-orders";
-import Spinner from "../../../components/UI/Spinner/Spinner";
-import Input from "../../../components/UI/Input/Input";
-import { connect } from "react-redux";
-import withErrorHandler from "../../../hoc/withErrorHandler/withErrorHandler";
-import * as actions from "../../../store/actions/index";
+import React, { Component } from 'react';
+import Button from '../../../components/UI/Button/Button';
+import classes from './ContactData.module.css';
+import axios from '../../../axios-orders';
+import Spinner from '../../../components/UI/Spinner/Spinner';
+import Input from '../../../components/UI/Input/Input';
+import { connect } from 'react-redux';
+import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
+import * as actions from '../../../store/actions/index';
+import { updateObject } from '../../../shared/utility';
 class ContactData extends Component {
   state = {
     orderForm: {
       name: {
-        elementType: "input",
+        elementType: 'input',
         elementConfig: {
-          type: "text",
-          placeholder: "Your Name"
+          type: 'text',
+          placeholder: 'Your Name'
         },
-        value: "",
+        value: '',
         validation: {
           required: true
         },
@@ -24,12 +25,12 @@ class ContactData extends Component {
         touched: false
       },
       street: {
-        elementType: "input",
+        elementType: 'input',
         elementConfig: {
-          type: "text",
-          placeholder: "Street"
+          type: 'text',
+          placeholder: 'Street'
         },
-        value: "",
+        value: '',
         validation: {
           required: true
         },
@@ -37,12 +38,12 @@ class ContactData extends Component {
         touched: false
       },
       zipCode: {
-        elementType: "input",
+        elementType: 'input',
         elementConfig: {
-          type: "text",
-          placeholder: "ZIP Code"
+          type: 'text',
+          placeholder: 'ZIP Code'
         },
-        value: "",
+        value: '',
         validation: {
           required: true,
           minLength: 5,
@@ -52,12 +53,12 @@ class ContactData extends Component {
         touched: false
       },
       country: {
-        elementType: "input",
+        elementType: 'input',
         elementConfig: {
-          type: "text",
-          placeholder: "Country"
+          type: 'text',
+          placeholder: 'Country'
         },
-        value: "",
+        value: '',
         validation: {
           required: true
         },
@@ -65,12 +66,12 @@ class ContactData extends Component {
         touched: false
       },
       email: {
-        elementType: "input",
+        elementType: 'input',
         elementConfig: {
-          type: "email",
-          placeholder: "Your E-Mail"
+          type: 'email',
+          placeholder: 'Your E-Mail'
         },
-        value: "",
+        value: '',
         validation: {
           required: true
         },
@@ -78,14 +79,14 @@ class ContactData extends Component {
         touched: false
       },
       deliveryMethod: {
-        elementType: "select",
+        elementType: 'select',
         elementConfig: {
           options: [
-            { value: "fastest", displayValue: "Fastest" },
-            { value: "cheapest", displayValue: "Cheapest" }
+            { value: 'fastest', displayValue: 'Fastest' },
+            { value: 'cheapest', displayValue: 'Cheapest' }
           ]
         },
-        value: "fastest",
+        value: 'fastest',
         validation: {},
         valid: true
       }
@@ -115,7 +116,7 @@ class ContactData extends Component {
       return true;
     }
     if (rules.required) {
-      isValid = value.trim() !== "" && isValid;
+      isValid = value.trim() !== '' && isValid;
     }
     if (rules.minLength) {
       isValid = value.length >= rules.minLength && isValid;
@@ -173,7 +174,7 @@ class ContactData extends Component {
             touched={formElement.config.touched}
           />
         ))}
-        <Button btnType="Success" disabled={!this.state.formIsValid}>
+        <Button btnType='Success' disabled={!this.state.formIsValid}>
           ORDER
         </Button>
       </form>
