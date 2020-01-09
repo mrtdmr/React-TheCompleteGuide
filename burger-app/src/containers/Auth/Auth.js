@@ -39,7 +39,7 @@ class Auth extends Component {
         touched: false
       }
     },
-    isSignUp: true
+    isSignUp: false
   };
   inputChangedHandler = (event, controlName) => {
     const updatedControls = updateObject(this.state.controls, {
@@ -105,6 +105,7 @@ class Auth extends Component {
     }
     return (
       <div className={classes.Auth}>
+        <p>{this.state.isSignUp ? 'SIGN UP' : 'SIGN IN'}</p>
         {authRedirect}
         {errorMessage}
         <form onSubmit={this.submitHandler}>
