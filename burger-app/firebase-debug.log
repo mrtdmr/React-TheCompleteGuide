@@ -1,0 +1,9 @@
+[debug] [2020-01-09T20:17:11.900Z] ----------------------------------------------------------------------
+[debug] [2020-01-09T20:17:11.903Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\murat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js build
+[debug] [2020-01-09T20:17:11.903Z] CLI Version:   7.11.0
+[debug] [2020-01-09T20:17:11.903Z] Platform:      win32
+[debug] [2020-01-09T20:17:11.903Z] Node Version:  v10.16.3
+[debug] [2020-01-09T20:17:11.904Z] Time:          Thu Jan 09 2020 23:17:11 GMT+0300 (GMT+03:00)
+[debug] [2020-01-09T20:17:11.904Z] ----------------------------------------------------------------------
+[debug] [2020-01-09T20:17:11.904Z] 
+[error] Error: [object Object] is not a Firebase command

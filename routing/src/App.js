@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
-import Blog from "./containers/Blog/Blog";
+import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Blog from './containers/Blog/Blog';
 
 class App extends Component {
   render() {
     return (
       //<BrowserRouter basename="/my-app"> Uygulammayı subfolder üzerinden başlatmak istersek bu şekilde kullanabiliriz.
       <BrowserRouter>
-        <div className="App">
+        <div className='App'>
           <Blog />
         </div>
       </BrowserRouter>
