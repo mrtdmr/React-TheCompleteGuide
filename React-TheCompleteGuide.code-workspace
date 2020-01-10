@@ -32,6 +32,12 @@
     },
     {
       "path": "webpack-app"
+    },
+    {
+      "path": "nextjs-app"
+    },
+    {
+      "path": "animations"
     }
   ]
 }
