@@ -1,9 +1,19 @@
-getAnimals = () => {
-  console.log('cat');
-  setTimeout(() => {
-    console.log('dog');
-  }, 2000);
-  console.log('butterfly');
-};
+'use strict';
+let adi = null;
 
-getAnimals();
+// Uzun bir AJAX veya Fetch API isteği
+function islem(callback) {
+  setTimeout(() => {
+    adi = 'Yusuf SEZER';
+    callback();
+  }, 2000);
+}
+
+// Yazdırma işlemi
+function yazdir() {
+  setTimeout(() => {
+    console.log(adi);
+  }, 1000);
+}
+
+islem(yazdir);

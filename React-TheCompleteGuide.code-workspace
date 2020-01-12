@@ -38,6 +38,12 @@
     },
     {
       "path": "animations"
+    },
+    {
+      "path": "redux-saga"
+    },
+    {
+      "path": "hooks"
     }
   ]
 }
