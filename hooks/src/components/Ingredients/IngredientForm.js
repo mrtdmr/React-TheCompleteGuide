@@ -17,6 +17,7 @@ const IngredientForm = React.memo(props => {
     event.preventDefault();
     props.onAddIngredient({ title: enteredTitle, amount: enteredAmount });
   };
+  console.log('RENDERING INGREDIENTFORM...');
   /** inputState[0] value, inputState[1] setState function */
   return (
     <section className='ingredient-form'>
