@@ -47,6 +47,9 @@
     },
     {
       "path": "hooks-prj"
+    },
+    {
+      "path": "replace-redux"
     }
   ]
 }
