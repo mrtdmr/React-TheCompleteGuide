@@ -4,9 +4,12 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import configureProductStore from './hooks-store/products-store';
+import configureProductsStore from './hooks-store/products-store';
+import configureCounterStore from './hooks-store/counter-store';
 
-configureProductStore();
+configureProductsStore();
+configureCounterStore();
+
 ReactDOM.render(
   <BrowserRouter>
     <App />

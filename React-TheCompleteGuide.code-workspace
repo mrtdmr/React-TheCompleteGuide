@@ -50,6 +50,9 @@
     },
     {
       "path": "replace-redux"
+    },
+    {
+      "path": "replace-redux-multiple-slices"
     }
   ]
 }
